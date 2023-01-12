@@ -1,0 +1,21 @@
+Memory management in Python contain private heap of all Python objects and data structures.
+Memory manaeement is very Amportant for software developers to work efficiently with any progra amming language
+In Python memory is managed by Python manager which determines where application data in the memory.
+So, we mus t have knowledge of Python memory manager to write efficient code and maintainable code.
+Keywords :- 
+ Memory Leak: Memory leak occurs when programmers create a memory in heap and forget to delete it. 
+              Memory leaks are particularly serious issues for programs like daemons and servers, which by definition, never terminate. 
+ Garbage Collection: Garbage Collection is a process of reclaiming the runtime unused memory automatically. 
+                    Resources other than memory, such as network sockets, database handles, user interaction windows, and file and device descriptors,  
+                    are not typically handled by garbage collection. Methods used to manage such resources, particularly destructors, may suffice to manage memory as well, leaving no need for GC. 
+ Manual Garbage collection: Garbage collectors typically do not attempt to optimize the use of resources other than memory. 
+                           If you only want throughput then you don’t need to do manual garbage collection,  
+                           but if you have resource constraint then you need to do it to use your resources in an optimized manner. 
+  Stack Memory :all the methods/method calls , references are store in stack memory. 
+   
+    Benefit and disadvantage of Memory Managements 
+ Since this procedure requires less memory, read and write it is much faster 
+ There is no code to match free pools with the areas they belong to, and then to return free arenas to the operating system 
+ To do this, a free pool needs to be put on a list specifically for the arena that it comes from. Once all the pools in the arena are on that list, 
+ the entire arena can be released 
+ To solve this problem partially allocated arenas are created so that we can utilize memory as much as possible and not create much more arenas.      
